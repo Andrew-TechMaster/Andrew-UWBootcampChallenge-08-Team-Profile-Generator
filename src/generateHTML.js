@@ -29,17 +29,67 @@ class Generator {
             </div>`;
     }
 
-    renderEngineerCard(engineerObj) {
+    renderEngineerCard() {
+        const results = [];
+        const target = this.membersObj.filter((person) => person.role === 'Engineer');
 
+        target.forEach(el => {
+            const res = `
+            <div class="col">
+             <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="card-title">${el.name}</h3>
+                    <h3 class="card-title">👓 Engineer</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">ID: ${el.id}</li>
+                        <li class="list-group-item">Email: <a href="${el.email}">${el.email}</a></li>
+                        <li class="list-group-item">GitHub: <a href="https://github.com/${el.github}"
+                                target="_blank">${el.github}</a></li>
+                    </ul>
+                </div>
+             </div>
+            </div>`
+
+            results.push(res);
+        });
+        
+        return results;
     }
 
-    renderInternCard(internObj) {
+    renderInternCard() {
+        const results = [];
+        const target = this.membersObj.filter((person) => person.role === 'Intern');
 
+        target.forEach(el => {
+            const res = `
+            <div class="col">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="card-title">${el.name}</h3>
+                        <h3 class="card-title">🧑‍🎓 Intern</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">ID: ${el.id}</li>
+                            <li class="list-group-item">Email: <a href="mailto:${el.email}">${el.email}</a></li>
+                            <li class="list-group-item">School: ${el.school}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>`
+
+            results.push(res);
+        });
+        
+        return results;
     }
 
     renderHTML() {
         const managerCard = this.renderManagerCard();
-        console.log(managerCard);
+        const engineerCard = this.renderEngineerCard();
+        const internCard = this.renderInternCard();
 
         return `
 <!DOCTYPE html>
@@ -65,43 +115,14 @@ class Generator {
 
     <!-- Main Content / Cards -->
     <main class="container mt-3">
-        <!-- Manager Card Template -->
-        ${managerCard}
+            <!-- Manager Card Template -->
+            ${managerCard}
 
             <!-- Engineer Card Template -->
-            <div class="col">
-                <div class="card">
-                    <div class="card-header bg-primary text-white">
-                        <h3 class="card-title">Angelo</h3>
-                        <h3 class="card-title">👓 Engineer</h3>
-                    </div>
-                    <div class="card-body">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">ID: 1</li>
-                            <li class="list-group-item">Email: <a href="mailto:test@gmail.com">test@gmail.com </a></li>
-                            <li class="list-group-item">GitHub: <a href="https://github.com/Andrew-TechMaster"
-                                    target="_blank">Andrew-TechMaster </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            ${engineerCard.map(e => (`${e}`)).join("")}
 
             <!-- Intern Card Template -->
-            <div class="col">
-                <div class="card">
-                    <div class="card-header bg-primary text-white">
-                        <h3 class="card-title">Merlin</h3>
-                        <h3 class="card-title">🧑‍🎓 Intern</h3>
-                    </div>
-                    <div class="card-body">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">ID: 1</li>
-                            <li class="list-group-item">Email: <a href="mailto:test@gmail.com">test@gmail.com </a></li>
-                            <li class="list-group-item">School: UW</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            ${internCard.map(e => (`${e}`)).join("")}
         </div>
     </main>
 
