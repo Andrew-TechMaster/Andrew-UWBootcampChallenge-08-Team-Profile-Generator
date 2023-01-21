@@ -39,7 +39,7 @@ class Generator {
 
     renderHTML() {
         const managerCard = this.renderManagerCard();
-console.log(managerCard);
+        console.log(managerCard);
 
         return `
 <!DOCTYPE html>
