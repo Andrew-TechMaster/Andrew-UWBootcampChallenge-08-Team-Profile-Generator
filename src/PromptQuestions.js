@@ -1,10 +1,10 @@
 const inquirer = require('inquirer');
-const Manager = require('./Manager');
-const Engineer = require('./Engineer');
-const Intern = require('./Intern');
-const Generator = require('../src/generateHTML');
-const wf = require('../src/writeFlie');
-const Validator = require('../src/validate')
+const Manager = require('../lib/Manager');
+const Engineer = require('../lib/Engineer');
+const Intern = require('../lib/Intern');
+const Generator = require('./generateHTML');
+const wf = require('./writeFlie');
+const Validator = require('./validate')
 
 
 class PromptQuestions {

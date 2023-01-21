@@ -1,5 +1,5 @@
 const inquirer = require('inquirer');
-const PromptQuestions = require('./lib/PromptQuestions');
+const PromptQuestions = require('./src/PromptQuestions');
 
 const manager = [];
 const members = [];
