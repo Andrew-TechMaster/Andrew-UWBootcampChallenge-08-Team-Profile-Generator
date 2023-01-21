@@ -1,47 +1,4 @@
-class Generator {
 
-    constructor(manager, members) {
-        this.managerObj = manager;
-        this.membersObj = members;
-    }
-
-
-    renderManagerCard() {
-
-        const target = this.managerObj[0];
-
-        return `
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <div class="card">
-                    <div class="card-header bg-primary text-white">
-                        <h3 class="card-title">${target.name}</h3>
-                        <h3 class="card-title">☕ Manager</h3>
-                    </div>
-                    <div class="card-body">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">ID: ${target.id}</li>
-                            <li class="list-group-item">Email: <a href="mailto:${target.email}"> ${target.email} </a></li>
-                            <li class="list-group-item">Office Number: ${target.officeNumber}</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>`;
-    }
-
-    renderEngineerCard(engineerObj) {
-
-    }
-
-    renderInternCard(internObj) {
-
-    }
-
-    renderHTML() {
-        const managerCard = this.renderManagerCard();
-console.log(managerCard);
-
-        return `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,7 +23,23 @@ console.log(managerCard);
     <!-- Main Content / Cards -->
     <main class="container mt-3">
         <!-- Manager Card Template -->
-        ${managerCard}
+        
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="card-title">aaa</h3>
+                        <h3 class="card-title">☕ Manager</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">ID: aaa</li>
+                            <li class="list-group-item">Email: <a href="mailto:aaa"> aaa </a></li>
+                            <li class="list-group-item">Office Number: aaa</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
             <!-- Engineer Card Template -->
             <div class="col">
@@ -110,9 +83,4 @@ console.log(managerCard);
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
 </body>
-</html>`;
-    }
-
-}
-
-module.exports = Generator;
+</html>
