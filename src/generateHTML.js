@@ -37,7 +37,7 @@ class Generator {
             const res = `
             <div class="col">
              <div class="card">
-                <div class="card-header bg-primary text-white">
+                <div class="card-header bg-success text-white">
                     <h3 class="card-title">${el.name}</h3>
                     <h3 class="card-title">👓 Engineer</h3>
                 </div>
@@ -66,7 +66,7 @@ class Generator {
             const res = `
             <div class="col">
                 <div class="card">
-                    <div class="card-header bg-primary text-white">
+                    <div class="card-header bg-warning text-white">
                         <h3 class="card-title">${el.name}</h3>
                         <h3 class="card-title">🧑‍🎓 Intern</h3>
                     </div>
