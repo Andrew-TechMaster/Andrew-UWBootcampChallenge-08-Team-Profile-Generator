@@ -1,18 +1,23 @@
 const inquirer = require('inquirer');
 const PromptQuestions = require('./lib/PromptQuestions');
-const Manager = require('./lib/Manager');
 
-const managerInput = [];
-const subordinate = [];
+const manager = [];
+const members = [];
 
 // Create a function to initialize app
 function init() {
 
-    const pq = new PromptQuestions();
+    const pq = new PromptQuestions(manager, members);
 
-    pq.promptInitialQuestions().then(() => pq.promptChoiceQuestion())
-                               .then((data) => pq.decideWhatIsNextStep(data.choice))
-                            
+    pq.start();
+
+    // pq.promptInitialQuestions().then((data) => {
+    //     const managerObj = new Manager(data.userName, data.userId, data.userEmail, data.officeNumber);
+    //     manager.push(managerObj);
+    //     return pq.promptChoiceQuestion()
+    // })
+    //     .then((data) => pq.decideWhatIsNextStep(data.choice))
+
 
     /*
     const promptQuestions = new PromptQuestions();
