@@ -178,7 +178,8 @@ class PromptQuestions {
                 console.log(this.members);
 
                 const generator = new Generator(this.manager, this.members);
-                const fileName = "dist/test.html";
+                // const fileName = "dist/test.html";
+                const fileName = "dist/index.html";
                 const data = generator.renderHTML();
                 wf(fileName, data);
                 break;
