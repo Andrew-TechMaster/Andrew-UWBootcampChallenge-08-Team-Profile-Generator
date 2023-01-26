@@ -17,9 +17,9 @@
 
 
 ## 🎬 Tutorial Video URL:
-❗❗❗ ☛ [Clik Me To The Page!](https://drive.google.com/file/d/1YGLhAfYM7MCMeEJbgjtinuhXynmXpmbZ/view) ☚ ❗❗❗
+❗❗❗ ☛ [Clik Me To The Video!](https://drive.google.com/file/d/1JMFa_dkrp4PK2_CnJ80X6cNqaK2R2XzO/view) ☚ ❗❗❗
 ```
-https://drive.google.com/file/d/1YGLhAfYM7MCMeEJbgjtinuhXynmXpmbZ/view
+https://drive.google.com/file/d/1JMFa_dkrp4PK2_CnJ80X6cNqaK2R2XzO/view
 
 (If the link is not working, please see the tutorial gif at the next section.)
 ```
@@ -34,7 +34,7 @@ https://drive.google.com/file/d/1YGLhAfYM7MCMeEJbgjtinuhXynmXpmbZ/view
 |:--:| 
 | *Prompted questions* |
 
-|![screentshot03](./images/README%20Generator%20Tutorial.gif)|
+|![screentshot03](./assets/Team-Profile-Generator-With-Text.gif)|
 |:--:| 
 | *Short tutorial* |
 - - -
