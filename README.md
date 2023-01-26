@@ -17,11 +17,19 @@
 
 
 ## 🎬 Tutorial Video URL:
-❗❗❗ ☛ [Clik Me To The Video!](https://drive.google.com/file/d/1JMFa_dkrp4PK2_CnJ80X6cNqaK2R2XzO/view) ☚ ❗❗❗
-```
-https://drive.google.com/file/d/1JMFa_dkrp4PK2_CnJ80X6cNqaK2R2XzO/view
+❗❗❗ ☛ [Clik Me To The Tutorial!](https://drive.google.com/file/d/1JMFa_dkrp4PK2_CnJ80X6cNqaK2R2XzO/view) ☚ ❗❗❗
+<br/><br/>
 
+❗❗❗ ☛ [Clik Me To The Unit Test!](https://drive.google.com/file/d/17ru_uTKUR99d9YQrDOyb6Ep9n8sYpVIY/view) ☚ ❗❗❗
+
+```
+Tutorial:
+https://drive.google.com/file/d/1JMFa_dkrp4PK2_CnJ80X6cNqaK2R2XzO/view
 (If the link is not working, please see the tutorial gif at the next section.)
+
+Unit Test:
+https://drive.google.com/file/d/17ru_uTKUR99d9YQrDOyb6Ep9n8sYpVIY/view
+
 ```
 
 ## 📷 Screenshots Of The Applications:
@@ -34,7 +42,11 @@ https://drive.google.com/file/d/1JMFa_dkrp4PK2_CnJ80X6cNqaK2R2XzO/view
 |:--:| 
 | *Prompted questions* |
 
-|![screentshot03](./assets/Team-Profile-Generator-With-Text.gif)|
+|![screentshot03](./assets/03.png)|
+|:--:| 
+| *Passed all unit tests* |
+
+|![screentshot04](./assets/Team-Profile-Generator-With-Text.gif)|
 |:--:| 
 | *Short tutorial* |
 - - -
